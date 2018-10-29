@@ -1,4 +1,6 @@
 # Sara Kazemi
+# with Cody Young, Nathan Accord-Warren, and Ryan Dorrity
+# Lab 3 
 # CST 205 Fall 2018 B
 
 
