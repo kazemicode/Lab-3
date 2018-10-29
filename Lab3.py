@@ -70,14 +70,13 @@ def lightenUp():
 def makeNegative():
    pic = getPic()
    pixels = getPixels(pic)
-   p = pixels[0]
-   print getColor(pixels[0])
+
    for p in pixels:
     # Find opposite of color by subtracting from max
-     myRed = 255 - getRed(p) 
-     myGreen = 255 - getGreen(p) 
-     myBlue = 255 - getBlue(p)
-     setColor(p, makeColor(myRed, myGreen, myBlue))
+     r = 255 - getRed(p) 
+     g = 255 - getGreen(p) 
+     b = 255 - getBlue(p)
+     setColor(p, makeColor(r, g, b))
    repaint(pic)
 
 # Problem 6: 
