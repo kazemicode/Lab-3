@@ -1,8 +1,8 @@
 # Sara Kazemi
-# with Cody Young, Nathan Accord-Warren, and Ryan Dorrity
+# Group: SCSI Logic - Ryan Dorrity, Sara Kazemi, Nathan Warren-Acord, Cody Young  
+# CST 205
 # Lab 3 
-# CST 205 Fall 2018 B
-
+# 2018-10-28
 
 # Returns the picture given a directory
 def getPic():
@@ -86,7 +86,7 @@ def makeNegative():
 def BnW():
    pic = getPic()
    pixels = getPixels(pic)
-   setColorWrapAround(1)
+  # setColorWrapAround(1)
    for p in pixels:
     # Find opposite of color by subtracting from max
      newColor =  (getRed(p) + getGreen(p) + getBlue(p)) / 3
@@ -97,7 +97,7 @@ def BnW():
 def betterBnW():
    pic = getPic()
    pixels = getPixels(pic)
-   setColorWrapAround(1)
+  # setColorWrapAround(1)
    for p in pixels:
       # Find opposite of color by subtracting from max and multiply by weight
       newColor =  (getRed(p) * 0.299 + getGreen(p) * 0.587 + getBlue(p) * 0.114) / 3
