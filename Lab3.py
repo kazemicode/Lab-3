@@ -49,9 +49,10 @@ def roseColoredGlasses():
    pic = getPic()
    pixels = getPixels(pic)
    for p in pixels:
-     myRed = getRed(p) + 255
-     myGreen = getGreen(p) - 100
-     setColor(p, makeColor(myRed, myGreen, getBlue(p)))
+     myRed = getRed(p) 
+     myGreen = getGreen(p) * .50
+     myBlue = getBlue(p) * .75
+     setColor(p, makeColor(myRed, myGreen, myBlue))
    repaint(pic) 
 
 # Problem 4:
