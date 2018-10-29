@@ -33,10 +33,13 @@ def noBlue():
 def lessRed(percent):
    pic = getPic()
    pixels = getPixels(pic)
+   setColorWrapAround(0)
    for p in pixels:
     r = getRed(p)
+    newRed = r - (r * (percent/100))
+  
     # set red value to the new reduced value
-    setRed(p, r - (r * (percent/100)))
+    setRed(p, newRed)
    repaint(pic) 
     
 # Problem 2:
@@ -44,9 +47,9 @@ def lessRed(percent):
 def moreRed(percent):
    pic = getPic()
    pixels = getPixels(pic)
+   setColorWrapAround(0)
    for p in pixels:
     r = getRed(p)
-    setColorWrapAround(0)
     newRed = r + (r * (percent/100))
     # The commented lines below aren't needed since ColorWrapAround 
     # is set to false by default to prevent overflow
