@@ -8,6 +8,16 @@
 def getPic():
   return makePicture(pickAFile())
 
+# Reduces the amount of red in each pixel by half
+def halfRed():
+   pic = getPic()
+   pixels = getPixels(pic)
+   for p in pixels:
+    r = getRed(p)
+    # set red value to the new reduced value
+    setRed(p, r * .5)
+   repaint(pic) 
+    
 
 # Eliminates all blue in each pixel        
 def noBlue():
